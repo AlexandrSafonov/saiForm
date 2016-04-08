@@ -91,6 +91,14 @@ form {
   /* End */ }
   .saiForm fieldset {
     font-size: 0; }
+  .saiForm .false_required {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+  .saiForm .message_false {
+    color: #f00;
+    display: none;
+    font-family: 'robotolight';
+    font-size: 16px;
+    padding: 0 0 0 20px; }
   .saiForm input {
     height: 50px;
     font-family: 'robotolight';
