@@ -83,6 +83,8 @@ form {
 .saiForm {
   /* Select */
   /* End */
+  /* Number */
+  /* End */
   /* Radio */
   /* End */
   /* Checkbox */
@@ -104,7 +106,7 @@ form {
     font-family: 'robotolight';
     font-size: 16px;
     padding: 0 0 0 20px;
-    border: 1px solid #ebebeb;
+    border: 1px solid #e0e0e0;
     background-color: #fff;
     color: #333;
     transition: 0.5s;
@@ -119,7 +121,7 @@ form {
     font-family: 'robotolight';
     font-size: 16px;
     padding: 12px 0 0 20px;
-    border: 1px solid #ebebeb;
+    border: 1px solid #e0e0e0;
     background-color: #fff;
     color: #333;
     transition: 0.5s;
@@ -149,7 +151,7 @@ form {
         padding: 0 0 0 20px;
         cursor: pointer;
         position: relative;
-        border: 1px solid #ebebeb;
+        border: 1px solid #e0e0e0;
         background-color: #fff;
         color: #333;
         transition: 0.5s; }
@@ -173,8 +175,8 @@ form {
       background-color: #fff;
       width: 100%;
       z-index: 100;
-      border-left: 1px solid #ebebeb;
-      border-right: 1px solid #ebebeb;
+      border-left: 1px solid #e0e0e0;
+      border-right: 1px solid #e0e0e0;
       left: 0px;
       top: 52px;
       box-sizing: border-box;
@@ -182,7 +184,7 @@ form {
       box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2); }
       .saiForm .select_wrapper .select li {
         padding: 0px 0 0px 20px;
-        border-bottom: 1px solid #ebebeb;
+        border-bottom: 1px solid #e0e0e0;
         cursor: pointer;
         background-color: #fff;
         -moz-user-select: none;
@@ -194,13 +196,42 @@ form {
         transition: 0.5s; }
         .saiForm .select_wrapper .select li:hover {
           background-color: #f0f0f0; }
+  .saiForm .number {
+    position: relative; }
+    .saiForm .number .up {
+      font-family: "FontAwesome";
+      content: "\f106";
+      right: 0;
+      top: 0;
+      line-height: 25px;
+      width: 25px;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      position: absolute; }
+    .saiForm .number .down {
+      font-family: "FontAwesome";
+      content: "\f107";
+      right: 0;
+      bottom: 0;
+      line-height: 25px;
+      width: 25px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+      border-bottom: none;
+      border-top: none;
+      display: block;
+      cursor: pointer;
+      position: absolute; }
   .saiForm .radio {
     display: inline-block;
     height: 25px;
     width: 25px;
     vertical-align: top;
     margin: 0 10px 10px 0;
-    border: 1px solid #ebebeb;
+    border: 1px solid #e0e0e0;
     background-color: #fff;
     border-radius: 100px;
     position: relative; }
@@ -231,7 +262,7 @@ form {
     width: 25px;
     vertical-align: top;
     margin: 0 10px 10px 0;
-    border: 1px solid #ebebeb;
+    border: 1px solid #e0e0e0;
     background-color: #fff;
     position: relative; }
     .saiForm .checkbox input {
@@ -282,7 +313,7 @@ form {
       z-index: 1;
       opacity: 0; }
     .saiForm .file label {
-      border: 1px solid #ebebeb;
+      border: 1px solid #e0e0e0;
       background-color: #fff;
       width: auto;
       line-height: 50px;
