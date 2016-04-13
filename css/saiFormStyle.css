@@ -91,6 +91,30 @@ form {
   /* End */
   /* File */
   /* End */ }
+  .saiForm textarea::-webkit-input-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm textarea::-moz-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm textarea:-moz-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm textarea:-ms-input-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm input::-moz-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm input:-moz-placeholder {
+    opacity: 1;
+    color: #333; }
+  .saiForm input:-ms-input-placeholder {
+    opacity: 1;
+    color: #333; }
   .saiForm fieldset {
     font-size: 0; }
   .saiForm .false_required {
