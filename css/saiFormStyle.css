@@ -124,7 +124,8 @@ form {
     display: none;
     font-family: 'robotolight';
     font-size: 16px;
-    padding: 0 0 0 20px; }
+    padding: 0;
+    margin: 0 0 10px; }
   .saiForm input {
     height: 50px;
     font-family: 'robotolight';
@@ -381,10 +382,11 @@ form {
     width: 100%;
     text-align: center;
     max-width: 200px;
-    padding: 0 15px;
+    padding: 0;
     border: none;
     color: #fff;
     cursor: pointer;
-    height: 50px; }
+    height: 50px;
+    outline: none; }
 
 /*# sourceMappingURL=saiFormStyle.css.map */

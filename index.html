@@ -27,13 +27,18 @@
             <input type="email" name="email" placeholder="E-Mail" required/>
             <input type="tel" name="phone" placeholder="Phone" required/>
             <input type="number" name="age" placeholder="Age"  required />
-            <input type="checkbox" name="" value="1" />
-            <fieldset>
-                <input type="radio" name="borow" value="1" />
-                <input type="radio" name="borow" value="2" />
-                <input type="radio" name="borow" value="3" />
+            <input type="checkbox" name="" value="1"  required/>
+            <fieldset class="radio_group">
+                <input type="radio" name="borow" value="1" required/>
+                <input type="radio" name="borow" value="2" required/>
+                <input type="radio" name="borow" value="3" required/>
             </fieldset>
-            <input name="file" type="file" />
+            <fieldset class="radio_group">
+                <input type="radio" name="borow2" value="1" required/>
+                <input type="radio" name="borow2" value="2" required/>
+                <input type="radio" name="borow2" value="3" required/>
+            </fieldset>
+            <input name="file" type="file" required/>
             <textarea name="message" placeholder="Message" required></textarea>
             <!--<input type="submit" value="Send"/>-->
             <button type="submit">Send</button>
