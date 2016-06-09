@@ -80,6 +80,8 @@ form {
   width: 600px;
   margin: 50px 0 0 50px; }
 
+/* Form element hover */
+/* Form element style */
 .saiForm {
   /* Select */
   /* End */
@@ -122,15 +124,15 @@ form {
   .saiForm .message_false {
     color: #f00;
     display: none;
-    font-family: 'robotolight';
+    font-family: "robotolight";
     font-size: 16px;
     padding: 0;
     margin: 0 0 10px; }
   .saiForm input {
     height: 50px;
-    font-family: 'robotolight';
+    font-family: "robotolight";
     font-size: 16px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
     border: 1px solid #e0e0e0;
     background-color: #fff;
     color: #333;
@@ -140,12 +142,13 @@ form {
     margin: 0 0 10px; }
     .saiForm input:hover {
       color: #292c33;
-      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+      background-color: transparent; }
   .saiForm textarea {
-    height: 200px;
-    font-family: 'robotolight';
+    height: 300px;
+    font-family: "robotolight";
     font-size: 16px;
-    padding: 12px 0 0 20px;
+    padding: 15px 0 0 15px;
     border: 1px solid #e0e0e0;
     background-color: #fff;
     color: #333;
@@ -156,7 +159,12 @@ form {
     resize: none; }
     .saiForm textarea:hover {
       color: #292c33;
-      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+      background-color: transparent; }
+  .saiForm label {
+    color: #333;
+    font-size: 16px;
+    font-family: "robotolight"; }
   .saiForm select {
     display: none; }
   .saiForm .select_wrapper {
@@ -164,16 +172,16 @@ form {
     margin: 0 0 10px;
     transition: 0.5s; }
     .saiForm .select_wrapper:hover input.select {
-      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2); }
     .saiForm .select_wrapper .input_wrapper {
       position: relative; }
       .saiForm .select_wrapper .input_wrapper .layer {
         line-height: 50px;
         min-height: 50px;
         margin: 0;
-        font-family: 'robotolight';
+        font-family: "robotolight";
         z-index: 10;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 15px;
         cursor: pointer;
         position: relative;
         border: 1px solid #e0e0e0;
@@ -182,7 +190,8 @@ form {
         transition: 0.5s; }
         .saiForm .select_wrapper .input_wrapper .layer:hover {
           color: #292c33;
-          box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2); }
+          box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+          background-color: transparent; }
         .saiForm .select_wrapper .input_wrapper .layer:after {
           content: "\f107";
           font-family: "FontAwesome";
@@ -203,24 +212,26 @@ form {
       border-left: 1px solid #e0e0e0;
       border-right: 1px solid #e0e0e0;
       left: 0px;
-      top: 52px;
+      top: 50px;
       box-sizing: border-box;
       margin: 0;
       box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2); }
       .saiForm .select_wrapper .select li {
-        padding: 0px 0 0px 20px;
+        padding: 0px 0 0px 15px;
         border-bottom: 1px solid #e0e0e0;
         cursor: pointer;
         background-color: #fff;
         -moz-user-select: none;
-        font-family: 'robotolight';
+        font-family: "robotolight";
         line-height: 50px;
         margin: 0;
         list-style: none;
         font-size: 16px;
         transition: 0.5s; }
         .saiForm .select_wrapper .select li:hover {
-          background-color: #f0f0f0; }
+          color: #292c33;
+          box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+          background-color: transparent; }
   .saiForm .number {
     position: relative; }
     .saiForm .number .up {
@@ -283,6 +294,7 @@ form {
       background-color: #64A8D1; }
   .saiForm .checkbox {
     display: inline-block;
+    vertical-align: middle;
     height: 25px;
     width: 25px;
     vertical-align: top;
@@ -322,6 +334,13 @@ form {
         opacity: 0; }
     .saiForm .checkbox input:checked + label:after {
       opacity: 1; }
+    .saiForm .checkbox p {
+      display: inline-block;
+      vertical-align: middle;
+      margin: -10px 0 0;
+      color: #333;
+      font-family: "robotolight";
+      font-size: 16px; }
   .saiForm .file {
     display: block;
     min-height: 50px;
@@ -342,7 +361,7 @@ form {
       background-color: #fff;
       width: auto;
       line-height: 50px;
-      font-family: 'robotolight';
+      font-family: "robotolight";
       font-size: 16px;
       padding: 0 20px;
       position: relative;
@@ -367,16 +386,16 @@ form {
     .saiForm .file span {
       display: inline-block;
       vertical-align: middle;
-      font-family: 'robotolight';
+      font-family: "robotolight";
       font-size: 16px;
-      padding: 0 0 0 20px; }
+      padding: 0 0 0 15px; }
     .saiForm .file input:checked + label:after {
       opacity: 1; }
   .saiForm input[type='submit'], .saiForm button {
     background-color: #64A8D1;
     display: block;
     margin: 0 0 10px;
-    font-family: 'robotolight';
+    font-family: "robotolight";
     font-size: 16px;
     font-weight: bold;
     width: 100%;
