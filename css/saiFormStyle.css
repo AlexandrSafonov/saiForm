@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 form, fieldset, input, textarea, blockquote, th, td {
   padding: 0;
@@ -77,12 +78,12 @@ input:-ms-input-placeholder {
   font-weight: normal;
   font-style: normal; }
 form {
-  width: 600px;
-  margin: 50px 0 0 50px; }
+  width: 40%;
+  margin: 50px 0 0 50px;
+  display: inline-block;
+  vertical-align: top; }
 
-/* Form element hover */
-/* Form element style */
-.saiForm {
+.saiFormStyle {
   /* Select */
   /* End */
   /* Number */
@@ -93,42 +94,42 @@ form {
   /* End */
   /* File */
   /* End */ }
-  .saiForm textarea::-webkit-input-placeholder {
+  .saiFormStyle textarea::-webkit-input-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm textarea::-moz-placeholder {
+  .saiFormStyle textarea::-moz-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm textarea:-moz-placeholder {
+  .saiFormStyle textarea:-moz-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm textarea:-ms-input-placeholder {
+  .saiFormStyle textarea:-ms-input-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm input::-webkit-input-placeholder {
+  .saiFormStyle input::-webkit-input-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm input::-moz-placeholder {
+  .saiFormStyle input::-moz-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm input:-moz-placeholder {
+  .saiFormStyle input:-moz-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm input:-ms-input-placeholder {
+  .saiFormStyle input:-ms-input-placeholder {
     opacity: 1;
     color: #333; }
-  .saiForm fieldset {
+  .saiFormStyle fieldset {
     font-size: 0; }
-  .saiForm .false_required {
+  .saiFormStyle .false_required {
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
-  .saiForm .message_false {
+  .saiFormStyle .message_false {
     color: #f00;
     display: none;
     font-family: "robotolight";
     font-size: 16px;
     padding: 0;
     margin: 0 0 10px; }
-  .saiForm input {
+  .saiFormStyle input {
     height: 50px;
     font-family: "robotolight";
     font-size: 16px;
@@ -140,11 +141,11 @@ form {
     display: block;
     width: 100%;
     margin: 0 0 10px; }
-    .saiForm input:hover {
+    .saiFormStyle input:hover {
       color: #292c33;
       box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
       background-color: transparent; }
-  .saiForm textarea {
+  .saiFormStyle textarea {
     height: 300px;
     font-family: "robotolight";
     font-size: 16px;
@@ -157,53 +158,56 @@ form {
     width: 100%;
     margin: 0 0 10px;
     resize: none; }
-    .saiForm textarea:hover {
+    .saiFormStyle textarea:hover {
       color: #292c33;
       box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
       background-color: transparent; }
-  .saiForm label {
+  .saiFormStyle label {
     color: #333;
     font-size: 16px;
     font-family: "robotolight"; }
-  .saiForm select {
+  .saiFormStyle select {
     display: none; }
-  .saiForm .select_wrapper {
+  .saiFormStyle .select_wrapper {
     position: relative;
     margin: 0 0 10px;
     transition: 0.5s; }
-    .saiForm .select_wrapper:hover input.select {
+    .saiFormStyle .select_wrapper:hover input.select {
       box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2); }
-    .saiForm .select_wrapper .input_wrapper {
+    .saiFormStyle .select_wrapper .selected {
+      display: none; }
+    .saiFormStyle .select_wrapper .input_wrapper {
       position: relative; }
-      .saiForm .select_wrapper .input_wrapper .layer {
-        line-height: 50px;
+      .saiFormStyle .select_wrapper .input_wrapper .layer {
+        position: relative;
+        font-family: "robotolight";
+        color: #333;
+        line-height: 20px;
         min-height: 50px;
         margin: 0;
-        font-family: "robotolight";
-        z-index: 10;
-        padding: 0 0 0 15px;
-        cursor: pointer;
-        position: relative;
+        padding: 14px 45px 14px 15px;
         border: 1px solid #e0e0e0;
         background-color: #fff;
-        color: #333;
+        cursor: pointer;
+        z-index: 10;
         transition: 0.5s; }
-        .saiForm .select_wrapper .input_wrapper .layer:hover {
+        .saiFormStyle .select_wrapper .input_wrapper .layer:hover {
           color: #292c33;
           box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
           background-color: transparent; }
-        .saiForm .select_wrapper .input_wrapper .layer:after {
-          content: "\f107";
+        .saiFormStyle .select_wrapper .input_wrapper .layer:after {
+          content: "";
           font-family: "FontAwesome";
           position: absolute;
-          right: 3%;
+          right: 25px;
+          top: 0;
           line-height: 50px;
           transition: 0.5s; }
-      .saiForm .select_wrapper .input_wrapper .layer.active {
+      .saiFormStyle .select_wrapper .input_wrapper .layer.active {
         transition: 0.5s;
         color: #292c33;
         box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2); }
-    .saiForm .select_wrapper .select {
+    .saiFormStyle .select_wrapper .select {
       display: none;
       position: absolute;
       background-color: #fff;
@@ -212,29 +216,29 @@ form {
       border-left: 1px solid #e0e0e0;
       border-right: 1px solid #e0e0e0;
       left: 0px;
-      top: 50px;
+      top: 52px;
       box-sizing: border-box;
-      margin: 0;
+      margin: 30px 0 0;
       box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2); }
-      .saiForm .select_wrapper .select li {
-        padding: 0px 0 0px 15px;
+      .saiFormStyle .select_wrapper .select li {
+        padding: 15px 45px 15px 15px;
         border-bottom: 1px solid #e0e0e0;
         cursor: pointer;
         background-color: #fff;
         -moz-user-select: none;
         font-family: "robotolight";
-        line-height: 50px;
+        line-height: 20px;
         margin: 0;
         list-style: none;
         font-size: 16px;
         transition: 0.5s; }
-        .saiForm .select_wrapper .select li:hover {
+        .saiFormStyle .select_wrapper .select li:hover {
           color: #292c33;
           box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
           background-color: transparent; }
-  .saiForm .number {
+  .saiFormStyle .number {
     position: relative; }
-    .saiForm .number .up {
+    .saiFormStyle .number .up {
       font-family: "FontAwesome";
       content: "\f106";
       right: 0;
@@ -247,7 +251,7 @@ form {
       display: block;
       cursor: pointer;
       position: absolute; }
-    .saiForm .number .down {
+    .saiFormStyle .number .down {
       font-family: "FontAwesome";
       content: "\f107";
       right: 0;
@@ -261,7 +265,7 @@ form {
       display: block;
       cursor: pointer;
       position: absolute; }
-  .saiForm .radio {
+  .saiFormStyle .radio {
     display: inline-block;
     height: 25px;
     width: 25px;
@@ -271,7 +275,7 @@ form {
     background-color: #fff;
     border-radius: 100px;
     position: relative; }
-    .saiForm .radio input {
+    .saiFormStyle .radio input {
       position: absolute;
       left: 0;
       top: 0;
@@ -279,7 +283,7 @@ form {
       width: 0;
       z-index: 1;
       opacity: 0; }
-    .saiForm .radio label {
+    .saiFormStyle .radio label {
       background-color: #fff;
       width: 100%;
       height: 100%;
@@ -290,9 +294,9 @@ form {
       cursor: pointer;
       border: 5px solid #fff;
       transition: 0.5s; }
-    .saiForm .radio input:checked + label {
+    .saiFormStyle .radio input:checked + label {
       background-color: #64A8D1; }
-  .saiForm .checkbox {
+  .saiFormStyle .checkbox {
     display: inline-block;
     vertical-align: middle;
     height: 25px;
@@ -302,7 +306,7 @@ form {
     border: 1px solid #e0e0e0;
     background-color: #fff;
     position: relative; }
-    .saiForm .checkbox input {
+    .saiFormStyle .checkbox input {
       position: absolute;
       left: 0;
       top: 0;
@@ -310,7 +314,7 @@ form {
       width: 0;
       z-index: 1;
       opacity: 0; }
-    .saiForm .checkbox label {
+    .saiFormStyle .checkbox label {
       background-color: #fff;
       width: 100%;
       height: 100%;
@@ -320,7 +324,7 @@ form {
       cursor: pointer;
       transition: 0.5s;
       position: relative; }
-      .saiForm .checkbox label:after {
+      .saiFormStyle .checkbox label:after {
         font-family: "FontAwesome";
         content: "\f00c";
         position: absolute;
@@ -332,23 +336,23 @@ form {
         color: #64A8D1;
         transition: 0.5s;
         opacity: 0; }
-    .saiForm .checkbox input:checked + label:after {
+    .saiFormStyle .checkbox input:checked + label:after {
       opacity: 1; }
-    .saiForm .checkbox p {
+    .saiFormStyle .checkbox p {
       display: inline-block;
       vertical-align: middle;
       margin: -10px 0 0;
       color: #333;
       font-family: "robotolight";
       font-size: 16px; }
-  .saiForm .file {
+  .saiFormStyle .file {
     display: block;
     min-height: 50px;
     vertical-align: top;
     margin: 0 10px 10px 0;
     background-color: #fff;
     position: relative; }
-    .saiForm .file input {
+    .saiFormStyle .file input {
       position: absolute;
       left: 0;
       top: 0;
@@ -356,7 +360,7 @@ form {
       width: 0;
       z-index: 1;
       opacity: 0; }
-    .saiForm .file label {
+    .saiFormStyle .file label {
       border: 1px solid #e0e0e0;
       background-color: #fff;
       width: auto;
@@ -371,7 +375,7 @@ form {
       cursor: pointer;
       transition: 0.5s;
       position: relative; }
-      .saiForm .file label:after {
+      .saiFormStyle .file label:after {
         font-family: "FontAwesome";
         content: "\f00c";
         position: absolute;
@@ -383,15 +387,15 @@ form {
         color: #64A8D1;
         transition: 0.5s;
         opacity: 0; }
-    .saiForm .file span {
+    .saiFormStyle .file span {
       display: inline-block;
       vertical-align: middle;
       font-family: "robotolight";
       font-size: 16px;
       padding: 0 0 0 15px; }
-    .saiForm .file input:checked + label:after {
+    .saiFormStyle .file input:checked + label:after {
       opacity: 1; }
-  .saiForm input[type='submit'], .saiForm button {
+  .saiFormStyle input[type='submit'], .saiFormStyle button {
     background-color: #64A8D1;
     display: block;
     margin: 0 0 10px;

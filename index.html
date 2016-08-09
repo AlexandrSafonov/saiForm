@@ -16,37 +16,51 @@
         <![endif]-->
     </head>
     <body>
-        <form class="saiForm" method="post" action="#">
+        <form class="saiForm2 saiFormStyle" method="post" action="required.php" enctype="multipart/form-data">
             <select required>
-                <option selected="">Sex</option>
+                <option selected="" value="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</option>
                 <option>Male</option>
-                <option value="1">Famale</option>                             
+                <option value="1">Famale</option>    
+                <optgroup label="Цвет">
+                    <option value="c1">Апельсиновый</option>
+                    <option value="c2">Лимонный</option>
+                    <option value="c3">Персиковый</option>
+                </optgroup>
+                <optgroup label="Тон">
+                    <option value="s1">Светлый</option>
+                    <option value="s2">Нормальный</option>
+                    <option value="s3">Темный</option>
+                </optgroup>
             </select>
             <input type="text" name="name" placeholder="Name" required/>
             <input type="text" name="surname" placeholder="Surname" required/>
             <input type="email" name="email" placeholder="E-Mail" required/>
             <input type="tel" name="phone" placeholder="Phone" required/>
-            <input type="number" name="age" placeholder="Age"  required />
+            <input type="number" name="age" placeholder="Age"  required class="customNumber" id="CustomID" />
             <input type="checkbox" name="" value="1"  required/>
             <fieldset class="radio_group">
-                <input type="radio" name="borow" value="1" required/>
-                <input type="radio" name="borow" value="2" required/>
-                <input type="radio" name="borow" value="3" required/>
+                <input type="radio" name="radio" value="1" />
+                <input type="radio" name="radio" value="2" />
+                <input type="radio" name="radio" value="3" />
             </fieldset>
             <fieldset class="radio_group">
-                <input type="radio" name="borow2" value="1" required/>
-                <input type="radio" name="borow2" value="2" required/>
-                <input type="radio" name="borow2" value="3" required/>
+                <input type="radio" name="radio2" value="1" required/>
+                <input type="radio" name="radio2" value="2" required/>
+                <input type="radio" name="radio2" value="3" required/>
             </fieldset>
-            <input name="file" type="file" required/>
+            <input name="file[]" multiple="" type="file" required class="customFile" />
             <textarea name="message" placeholder="Message" required></textarea>
             <!--<input type="submit" value="Send"/>-->
-            <button type="button">Send</button>
+            <button type="submit">Send</button>
         </form>
-        <form action="#" method="post" class="saiForm">
+        <form action="#" method="post" class="saiFormStyle" id="otherForm">
             <div class="item">
                 <div class="wrapper">
-                    <h4>Angaben zur Reise</h4>
+                    <select class="custom" id="custom" required data-false-message="Custom message">
+                        <option selected=""></option>
+                        <option>Male</option>
+                        <option value="1">Famale</option>                             
+                    </select>
                     <div class="three_item">
                         <div class="t_item">
                             <div class="itemWrapper">
@@ -65,77 +79,6 @@
                                 <label>Reisezeitraum (von, bis) <span class="star">*</span></label>
                                 <input type="text" required="" name="Reisezeitraum(von,bis)" />
                             </div>
-                        </div>
-                    </div>
-                    <div class="three_item">
-                        <div class="t_item">
-                            <div class="itemWrapper">
-                                <label>Budget <span class="star">*</span></label>
-                                <input type="text" required="" name="Budget" />
-                            </div>
-                        </div>
-                        <div class="t_item">
-                            <div class="itemWrapper">
-                                <label>Unterkunftsart</label>
-                                <select>
-                                    <option>???</option>
-                                    <option>???</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="t_item">
-                            <div class="itemWrapper">
-                                <label>Verpflegung</label>
-                                <select>
-                                    <option>???</option>
-                                    <option>???</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="four_item">
-                        <div class="f_item">
-                            <div class="itemWrapper">
-                                <label>Schüleranzahl <span class="star">*</span></label>
-                                <input type="text" required="" name="Schuleranzahl" />
-                            </div>
-                        </div>
-                        <div class="f_item">
-                            <div class="itemWrapper">
-                                <label>Begleitpersonen <span class="star">*</span></label>
-                                <input type="text" required="" name="Begleitpersonen" />
-                            </div>
-                        </div>
-                        <div class="f_item">
-                            <div class="itemWrapper">
-                                <label>Reisedauer <span class="star">*</span></label>
-                                <input type="text" required="" name="Reisedauer" />
-                            </div>
-                        </div>
-                        <div class="f_item">
-                            <div class="itemWrapper">
-                                <label>Klassenstufe</label>
-                                <input type="text" required="" name="Klassenstufe" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="size3065">
-                        <div class="size30">
-                            <div class="itemWrapper">
-                                <label>Freiplätze</label>
-                                <select>
-                                    <option>???</option>
-                                    <option>???</option>
-                                </select>
-                            </div>
-                            <div class="itemWrapper">
-                                <label>Gutscheincode</label>
-                                <input type="text" name="Gutscheincode" />
-                            </div>
-                        </div>
-                        <div class="size65">
-                            <label>Bemerkungen</label>
-                            <textarea name="Bemerkungen"></textarea>
                         </div>
                     </div>
                 </div>
