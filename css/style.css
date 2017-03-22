@@ -77,12 +77,6 @@ input:-ms-input-placeholder {
   src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
   font-weight: normal;
   font-style: normal; }
-form {
-  width: 40%;
-  margin: 50px 0 0 50px;
-  display: inline-block;
-  vertical-align: top; }
-
 .saiFormStyle {
   font-family: "robotolight";
   color: #333;
@@ -468,4 +462,10 @@ form {
     height: 50px;
     outline: none; }
 
-/*# sourceMappingURL=saiFormStyle.css.map */
+form {
+  width: 40%;
+  margin: 50px 0 0 50px;
+  display: inline-block;
+  vertical-align: top; }
+
+/*# sourceMappingURL=style.css.map */
